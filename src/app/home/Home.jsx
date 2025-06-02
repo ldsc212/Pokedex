@@ -9,6 +9,7 @@ function Home() {
     return (
         <div className="home">
             <div className="home__container">
+                <img src="/logo.png" alt="Pokédex Logo" className="home__logo" />
                 <h1>POKÉDEX</h1>
                 {state.name ? (<>
                     <h2>Hola de nuevo, {state.name}</h2>

@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-image: url('/fppp.gif');
+    background-size: 600px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .details__container {
@@ -11,6 +15,8 @@
     width: 100%;
     max-width: 900px;
     padding: 4em 2.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .details__name {

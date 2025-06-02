@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router'
 import axios from 'axios'
 import './Details.css'
 import { defaultTypeEs } from '../../lib/utils'
+import { CgPokemon } from "react-icons/cg";
+import { SiPokemon } from "react-icons/si";
 
 function Details() {
     const { name } = useParams()
@@ -55,9 +57,14 @@ function Details() {
             <div className='details__container'>
                 <div className='details__header'>
                     <Link to='/pokedex' className='details__back'>
-                        Volver
+                        <SiPokemon style={{ fontSize: "6.5em" }} />
                     </Link>
-                    <h2 className='details__name'>{pokemon.name}</h2>
+                    <h2 className="details__name">
+                        <span style={{ display: "block", textAlign: "center" }}>
+                            <CgPokemon style={{ fontSize: "1.2em", marginBottom: "0.2em", marginLeft: "0.7em", color: "#FFD600" }} />
+                        </span>
+                        {pokemon.name}
+                    </h2>
                     <p className='details__id'>{`No. ${pokemon.id.toString().padStart(3, '0')}`}</p>
                 </div>
 

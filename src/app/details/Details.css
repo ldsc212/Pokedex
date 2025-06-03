@@ -54,6 +54,5 @@
 
 .details__back:hover svg {
     filter: drop-shadow(0 0 8px #6240ec) brightness(3);
-    /* Puedes ajustar el color y la intensidad del brillo */
     transition: filter 0.2s;
 }
